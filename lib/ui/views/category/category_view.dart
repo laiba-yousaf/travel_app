@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-
 import 'package:travling_mobile_app/ui/common/app_strings.dart';
 import 'package:travling_mobile_app/ui/common/ui_helpers.dart';
 import 'package:travling_mobile_app/ui/views/category/Widget/DestinationList.dart';
-
-import 'package:travling_mobile_app/ui/widgets/common/category_card/category_card.dart';
+import 'package:travling_mobile_app/ui/views/category/Widget/categoryCard.dart';
 import 'package:travling_mobile_app/ui/widgets/common/search_field/search_field.dart';
 
 import 'category_viewmodel.dart';
@@ -50,7 +48,7 @@ class CategoryView extends StackedView<CategoryViewModel> {
                 verticalSpaceLarge,
                 SearchField(title: "Search Destination"),
                 verticalSpaceMedium,
-                DestinationList(),
+              DestinationList(),
                 verticalSpaceMedium,
                 SizedBox(
                   height: 450,

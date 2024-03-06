@@ -17,10 +17,10 @@ class CategoryViewModel extends BaseViewModel {
 
   List destinationimages = [tree, tree, tree, tree];
 
-  updatestate(like, index) {
-    likes[index] = !like;
-    notifyListeners();
-  }
+  // updatestate(like, index) {
+  //   likes[index] = !like;
+  //   notifyListeners();
+  // }
 
   List likes = [true, false, false, false];
 }

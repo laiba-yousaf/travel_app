@@ -18,10 +18,10 @@ class SearchScreenViewModel extends BaseViewModel {
 
   List images = [kuta, resort, manadalika, beach];
 
-  updatestate(like, index) {
-    likes[index] = !like;
-    notifyListeners();
-  }
+  // updatestate(like, index) {
+  //   likes[index] = !like;
+  //   notifyListeners();
+  // }
 
   navigationCategory() {
     _navigationService.navigateToCategoryView();

@@ -16,21 +16,19 @@ class DestinationList extends ViewModelWidget<CategoryViewModel> {
   ) {
     return SizedBox(
       height: 50,
-      child: Expanded(
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          shrinkWrap: true,
-          itemCount: viewModel.destinationimages.length,
-          itemBuilder: (BuildContext context, index) {
-            return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: DestinationCard(
-                image: viewModel.destinationimages[index],
-                title: viewModel.destinationtitle[index],
-              ),
-            );
-          },
-        ),
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
+        itemCount: viewModel.destinationimages.length,
+        itemBuilder: (BuildContext context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5),
+            child: DestinationCard(
+              image: viewModel.destinationimages[index],
+              title: viewModel.destinationtitle[index],
+            ),
+          );
+        },
       ),
     );
   }
